@@ -18,7 +18,7 @@
   --img-bg-color: rgba(47, 48, 58, 0.8);
   --overlay-bg-color: rgba(33, 150, 243, 0.9);
   --black-color-light: rgba(0, 0, 0, 0.1);
-  --duration: 250ms;
+  --duration: 1000ms;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -636,8 +636,8 @@ address {
   min-width: 528px;
   min-height: 581px;
   background-color: var(--white-color);
-
   transform: translate(-50%, -50%);
+  transition: transform var(--duration) var(--timing-function);
 }
 
 .modal-btn {
